@@ -104,8 +104,8 @@ h1, h2, h3, h4, h5,
 
 	.navbar-brand {
 		color: $black;
-		padding-top: .7rem;
-		padding-bottom: .7rem;
+		// padding-top: .7rem;
+		// padding-bottom: .7rem;
 		span{
 			color: $primary;
 			@include gradient-background();
@@ -118,6 +118,10 @@ h1, h2, h3, h4, h5,
 		@include media-breakpoint-down(md){
 			color: $white;
 		}
+	}
+
+	.navbar-logo {
+		height: 40px;
 	}
 	
 	.navbar-nav {
