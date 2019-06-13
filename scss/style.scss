@@ -78,7 +78,8 @@ h1, h2, h3, h4, h5,
 
 
 .ftco-navbar-light {
-	background: transparent!important;
+	// background: transparent!important;
+	background-color: #ffffffc7!important;
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -1324,14 +1325,14 @@ textarea.form-control {
 				}
 			}
 		}
-		.btn-primary{
-			background: $white !important;
-			border: 2px solid $white !important;
-			&:hover{
-				background: $white;
-				border: 2px solid $white !important;
-			}
-		}
+		// .btn-primary{
+		// 	background: $white !important;
+		// 	border: 2px solid $white !important;
+		// 	&:hover{
+		// 		background: $white;
+		// 		border: 2px solid $white !important;
+		// 	}
+		// }
 	}
 	p {
 		color: rgba($white, .7);
@@ -2245,4 +2246,15 @@ textarea.form-control {
     stroke-dasharray: 89, 200;
     stroke-dashoffset: -136px;
   }
+}
+
+.services-descript {
+	position: absolute;
+	top: 0;left: 0;bottom: 0;
+	    display: flex;
+    align-items: center;
+	background-color: rgba(0, 0, 0, 0.6);
+	color: #fff;
+	font-weight: bold;
+	padding: 2rem;
 }

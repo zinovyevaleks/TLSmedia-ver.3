@@ -5,6 +5,8 @@
 
 (function($) {
 
+
+
 	"use strict";
 
 	$(window).stellar({
@@ -15,6 +17,7 @@
     hideDistantElements: false,
     scrollProperty: 'scroll'
   });
+
 
 
 	var fullHeight = function() {
@@ -41,7 +44,6 @@
    $.Scrollax();
 
 
-
    // Burger Menu
 	var burgerMenu = function() {
 
@@ -54,9 +56,6 @@
 			} else {
 				$(this).addClass('active');	
 			}
-
-			
-			
 		});
 
 	};
@@ -66,7 +65,7 @@
 	var onePageClick = function() {
 
 
-		$(document).on('click', '#ftco-nav a[href^="#"]', function (event) {
+		$(document).on('click', '#ftco-nav a[href^="#"], .anchor_link', function (event) {
 	    event.preventDefault();
 
 	    var href = $.attr(this, 'href');
@@ -316,6 +315,66 @@
     fixedContentPos: false
   });
 
+
+	$('.services-descript').hide();
+
+	$("#services-multilanding").hover(function () {
+			// over
+		$('#services-multilanding-text').fadeIn();
+
+		}, function () {
+			// out
+			$('.services-descript').fadeOut();
+		}
+	);
+
+		$("#services-analytics").hover(function () {
+			// over
+		$('#services-analytics-text').fadeIn();
+
+		}, function () {
+			// out
+			$('.services-descript').fadeOut();
+		}
+	);
+
+			$("#services-geo-targeting").hover(function () {
+			// over
+		$('#services-geo-targeting-text').fadeIn();
+
+		}, function () {
+			// out
+			$('.services-descript').fadeOut();
+		}
+	);
+
+				$("#services-funnel").hover(function () {
+			// over
+		$('#services-funnel-text').fadeIn();
+
+		}, function () {
+			// out
+			$('.services-descript').fadeOut();
+		}
+	);
+
+
+		//E-mail Ajax Send
+	$("form").submit(function() { //Change
+		var th = $(this);
+		$.ajax({
+			type: "POST",
+			url: "mail.php", //Change
+			data: th.serialize()
+		}).done(function() {
+			alert("Thank you!");
+			setTimeout(function() {
+				// Done Functions
+				th.trigger("reset");
+			}, 1000);
+		});
+		return false;
+	});
 
 
 
