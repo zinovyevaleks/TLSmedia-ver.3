@@ -39,9 +39,9 @@ $secondary: #a0f669;
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f98461', endColorstr='#F7444E', GradientType=1 );
 }
 
-html {
-	// overflow-x: hidden;
-}
+// html {
+// 	overflow-x: hidden;
+// }
 body {
 	font-family: $font-primary;
 	background: $white;
@@ -692,8 +692,8 @@ h1, h2, h3, h4, h5,
 		span{
 			color: $white;
 		}
-		span.play{
-		}
+		// span.play{
+		// }
 		span.watch{
 			font-family: $font-primary;
 			font-size: 16px;
@@ -995,8 +995,8 @@ h1, h2, h3, h4, h5,
 .staff{
 	overflow: hidden;
 	@include transition(.3s);
-	.img-wrap{
-	}
+	// .img-wrap{
+	// }
 	.img{
 		height: 150px;
 		width: 150px;
@@ -1132,9 +1132,9 @@ h1, h2, h3, h4, h5,
 				-webkit-background-clip: text;
 			  -webkit-text-fill-color: transparent;
 			}
-			h2{
-				// font-size: px;
-			}
+			// h2{
+			// 	 font-size: px;
+			// }
 		}
 	}
 }
@@ -1261,16 +1261,16 @@ textarea.form-control {
 
 //ABOUT
 .about-author{
-	img{
-	}
+	// img{
+	// }
 	.desc{
 		h3{
 			font-size: 24px;
 		}
 	}
-	.bio{
+	// .bio{
 
-	}
+	// }
 }
 
 
@@ -1666,6 +1666,7 @@ textarea.form-control {
 .mfp-with-zoom.mfp-bg {
   opacity: 0;
   -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
   -webkit-transition: all 0.3s ease-out; 
   -moz-transition: all 0.3s ease-out; 
   -o-transition: all 0.3s ease-out; 
@@ -1713,8 +1714,8 @@ textarea.form-control {
 		position: relative;
 		z-index: 0;
 	}
-	.block-18{
-	}
+	// .block-18{
+	// }
 	.text{
 		display: inline-block;
 		@include media-breakpoint-up(lg){
@@ -1820,12 +1821,12 @@ textarea.form-control {
 		-moz-box-shadow: 0px 42px 29px -31px rgba(0,0,0,0.05);
 		box-shadow: 0px 42px 29px -31px rgba(0,0,0,0.05);
 	}
-	.one{
-		// width: 90px;
-	}
-	.two{
-		// width: calc(100% - 90px);
-	}
+	// .one{
+	// 	 width: 90px;
+	// }
+	// .two{
+	// 	 width: calc(100% - 90px);
+	// }
 	span.day{
 		font-size: 50px;
 		font-weight: 400;
@@ -1875,16 +1876,16 @@ textarea.form-control {
 
 .block-6 {
 	margin-bottom: 40px;
-	.icon {
-		span {
-			&:before {
-			}
-		}
-	}
+	// .icon {
+	// 	span {
+	// 		&:before {
+	// 		}
+	// 	}
+	// }
 	.media-body {
-		.heading {
+		// .heading {
 
-		}
+		// }
 		p {
 			font-size: 16px;
 		}
@@ -1928,7 +1929,7 @@ textarea.form-control {
 			a{
 				color: $white;
 			}
-			span{}
+			// span{}
 		}
 	}
 	.box{
@@ -1975,8 +1976,8 @@ textarea.form-control {
 		box-shadow: none!important;
 		font-size: 15px;
 	}
-	#map {
-	}
+	// #map {
+	// }
 }
 
 
