@@ -9835,3 +9835,9 @@ textarea.form-control {
   color: #fff;
   font-weight: bold;
   padding: 2rem; }
+
+.standing-features .box .icon {
+  background: none; }
+
+.standing-features .box .features-price {
+  font-weight: 700; }
