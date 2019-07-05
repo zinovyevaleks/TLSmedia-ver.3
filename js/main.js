@@ -85,7 +85,8 @@
  	var carousel = function () {
  		$('.home-slider').owlCarousel({
  			loop: true,
- 			autoplay: true,
+			 autoplay: true,
+			 autoplayTimeout:10000,
  			margin: 0,
  			animateOut: 'fadeOut',
  			animateIn: 'fadeIn',
@@ -380,7 +381,8 @@
 	 //Маска телефона
 	 $(".phone-mask").mask("+7 (999) 999-99-99");
 
-
-
-
+	 $(".hidden").hide();
+	 $(".clickable").click(function(){
+		$(".hidden").fadeToggle(150);
+	  });
  })(jQuery);
