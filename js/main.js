@@ -85,14 +85,15 @@
  	var carousel = function () {
  		$('.home-slider').owlCarousel({
  			loop: true,
-			 autoplay: true,
-			 autoplayTimeout:10000,
+ 			autoplay: true,
+ 			autoplayTimeout: 10000,
  			margin: 0,
  			animateOut: 'fadeOut',
  			animateIn: 'fadeIn',
  			nav: false,
  			autoplayHoverPause: false,
- 			items: 1,
+			 items: 1,
+			 mouseDrag: false,
  			navText: ["<span class='ion-md-arrow-back'></span>", "<span class='ion-chevron-right'></span>"],
  			responsive: {
  				0: {
@@ -115,7 +116,8 @@
  			margin: 30,
  			stagePadding: 0,
  			nav: false,
- 			dots: true,
+			 dots: true,
+			 mouseDrag: false,
  			navText: ['<span class="ion-ios-arrow-back">', '<span class="ion-ios-arrow-forward">'],
  			responsive: {
  				0: {
@@ -138,7 +140,8 @@
  			margin: 30,
  			stagePadding: 0,
  			nav: false,
- 			dots: true,
+			 dots: true,
+			 mouseDrag: false,
  			navText: ['<span class="ion-ios-arrow-back">', '<span class="ion-ios-arrow-forward">'],
  			responsive: {
  				0: {
@@ -376,13 +379,13 @@
  			}, 1000);
  		});
  		return false;
-	 });
-	 
-	 //Маска телефона
-	 $(".phone-mask").mask("+7 (999) 999-99-99");
+ 	});
 
-	 $(".hidden").hide();
-	 $(".clickable").click(function(){
-		$(".hidden").fadeToggle(150);
-	  });
+ 	//Маска телефона
+ 	$(".phone-mask").mask("+7 (999) 999-99-99");
+
+ 	$(".hidden").hide();
+ 	$(".clickable").click(function () {
+ 		$(".hidden").fadeToggle(150);
+ 	});
  })(jQuery);
