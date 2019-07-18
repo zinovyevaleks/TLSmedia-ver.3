@@ -8498,9 +8498,6 @@ h5,
       bottom: 40px;
       width: 100%;
       text-align: center; }
-      @media (min-width: 992px) {
-        .owl-carousel.home-slider .owl-dots {
-          display: none; } }
       @media (max-width: 767.98px) {
         .owl-carousel.home-slider .owl-dots {
           bottom: 5px; } }
@@ -8510,8 +8507,13 @@ h5,
         margin: 5px;
         border-radius: 50%;
         background: rgba(255, 255, 255, 0.4); }
+        .owl-carousel.home-slider .owl-dots .owl-dot::after {
+          border-color: #000; }
         .owl-carousel.home-slider .owl-dots .owl-dot.active {
           background: #fff; }
+        @media (min-width: 992px) {
+          .owl-carousel.home-slider .owl-dots .owl-dot {
+            background-color: #000; } }
 
 .hero-wrap {
   width: 100%;
